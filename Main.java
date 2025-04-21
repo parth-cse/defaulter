@@ -7,7 +7,7 @@ public class Main {
         // Wait for user input to start the game   
         try {
             System.in.read(); // Wait for Enter key
-            if( System.in.read() == '\n') {
+            if( System.in.read() == '1') {
                 game.start(); // Start the game
             } else {
                 System.out.println("Invalid input. Please press Enter to start the game.");
