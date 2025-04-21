@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     triggers {
-        githubPush()
+        githubPubat()
     }
 
     stages {
@@ -14,14 +14,14 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'javac Game.java'
-                sh 'javac Main.java'
+                bat 'javac Game.java'
+                bat 'javac Main.java'
             }
         }
 
         stage('Run') {
             steps {
-                sh 'java Main'
+                bat 'java Main'
             }
         }
     }
