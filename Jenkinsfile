@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    triggers {
-        githubPubat()
-    }
-
     stages {
         stage('Clone') {
             steps {
