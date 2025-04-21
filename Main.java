@@ -3,6 +3,8 @@ public class Main {
         // Create a new instance of the Game class
         Game game = new Game();
         System.out.println("Welcome to the Number Guessing Game!");
+        System.out.println("To Start ");
+
         System.out.println("To Start Press Enter");
         // Wait for user input to start the game   
         try {
