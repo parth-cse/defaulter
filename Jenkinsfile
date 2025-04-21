@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    trigger {
+        gitlabPush()
+    }
+
     stages {
         stage('Clone') {
             steps {
